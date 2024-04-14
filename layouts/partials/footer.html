@@ -6,4 +6,10 @@
         | themed with
         <a class="f:bold" href="https://github.com/ekzyis/holy" target="_blank">Holy</a>
     </div>
+    {{ with .Site.Params.commit }}
+    <div class="f:fade-60 f:12 mt:3">
+        running
+        <a class="f:bold" href="https://git.ekzy.is/ekzyis/ekzyis/commit/{{ . }}" target="_blank">{{ . }}</a>
+    </div>
+    {{ end }}
 </footer>
