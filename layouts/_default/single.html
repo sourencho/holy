@@ -2,10 +2,9 @@
 <article class="box:border-box">
     <header class="mb:32">
         <div class="font:40 font:extrabold">{{ .Title }}</div>
-        {{- if isset .Params "banner" -}}
-        {{ $image := resources.Get .Params.banner }}
-        <img class="mt:16" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}">
-        {{- end -}}
+        {{ with resources.GetMatch .Params.banner }}
+        <img class="mt:16" src="{{ .RelPermalink }}" width="{{ .Width }}">
+        {{ end }}
         <div class="mt:16 f:fade-60">
             {{- if isset .Params "date" -}}
             {{ if eq .Lastmod .Date }}
