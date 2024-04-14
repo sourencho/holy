@@ -3,7 +3,8 @@
     <header class="mb:32">
         <div class="font:40 font:extrabold">{{ .Title }}</div>
         {{ with resources.GetMatch .Params.banner }}
-        <img class="mt:16" src="{{ .RelPermalink }}" width="{{ .Width }}">
+        {{ $image := .Fit "1920x1080" }}
+        <img class="mt:16" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}">
         {{ end }}
         <div class="mt:16 f:fade-60">
             {{- if isset .Params "date" -}}
