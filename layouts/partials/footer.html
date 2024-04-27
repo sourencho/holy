@@ -1,15 +1,3 @@
 <footer class="py:24 text:center">
     <div class="f:fade-30 f:14 mb:8">{{ .Site.Params.copyright }}</div>
-    <div class="f:fade-60 f:12">
-        powered by
-        <a class="f:bold" href="https://gohugo.io/" target="_blank">Hugo</a>
-        | themed with
-        <a class="f:bold" href="https://github.com/ekzyis/holy" target="_blank">Holy</a>
-    </div>
-    {{ with .Site.Params.commit }}
-    <div class="f:fade-60 f:12 mt:3">
-        running
-        <a class="f:bold" href="https://git.ekzy.is/ekzyis/ekzyis/commit/{{ . }}" target="_blank">{{ . }}</a>
-    </div>
-    {{ end }}
 </footer>
