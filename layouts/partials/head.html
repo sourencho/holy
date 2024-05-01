@@ -21,10 +21,20 @@
     <script src="https://unpkg.com/themes.js"></script>
     <script>window.themes = window.themes || new window.Themes()</script>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FHPWC19NH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3FHPWC19NH');
+    </script>
+
     <style>
-        :root {
-            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-        }
+:root {
+    --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
     </style>
 
     {{- partial "head-extra.html" . -}}
