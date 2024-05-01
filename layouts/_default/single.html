@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="box:border-box">
-    <header class="mb:32">
+    <header class="mb:2">
         <div class="font:40 font:extrabold">{{ .Title }}</div>
         {{ with resources.GetMatch .Params.banner }}
         {{ $image := .Fit "1920x1080" }}
