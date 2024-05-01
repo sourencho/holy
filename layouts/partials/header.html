@@ -9,7 +9,7 @@
         align-items:center
     ">
         <div>
-            <a href="/" class="mr-3 font:extralight">
+            <a href="/" class="mr-3 font:bold">
                 {{ if not .Site.Params.HeaderTitle }}
                 {{ .Site.Title }}
                 {{ else }}
@@ -31,7 +31,7 @@
                 font:fade
                 font:fade-10:hover
                 font:fade-30.active
-                px:8
+                px:4
                 transition:150ms;ease-in
                 {{ $active }}
             " href="{{ .URL }}" title="{{ .Title }}">
